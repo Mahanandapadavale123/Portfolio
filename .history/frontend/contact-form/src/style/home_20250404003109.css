@@ -1,0 +1,48 @@
+/* Social Icons Container */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+/* Social Icons Styling */
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12.5px 30px;
+  height: 50px;
+  width: 150px;
+  border: 0;
+  border-radius: 25px;
+  background-color: #99dbf8;
+  color: #151925;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.5s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background-color: #f0f5f9;
+  box-shadow: 0 0 20px #6fc5ff50;
+  transform: scale(1.1);
+}
+
+.social-icon:active {
+  background-color: #3d94cf;
+  transition: all 0.25s;
+  box-shadow: none;
+  transform: scale(0.98);
+}
+
+/* Icon Colors */
+.social-icon.linkedin {
+  color: #0077b5;
+}
+
+.social-icon.github {
+  color: #171515;
+}

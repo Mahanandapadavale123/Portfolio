@@ -1,0 +1,75 @@
+
+  .container {
+  max-width: 1200px;  /* Adjust width as needed */
+  margin: auto;  /* Centers the content */
+  padding: 0 20px; /* Adds some spacing from the edges */
+}
+
+
+.header { 
+  margin-left: 3%;
+ }
+.title{
+  margin-left: 3%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--text-color);
+}
+.button{  
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.App-header {
+  display: flex;
+  justify-content: flex-end; /* Moves everything to the right */
+  align-items: center;
+  padding: 15px 30px;
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  gap: 15px; /* Adds space between elements */
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.right{
+  min-width: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease-in-out;
+}

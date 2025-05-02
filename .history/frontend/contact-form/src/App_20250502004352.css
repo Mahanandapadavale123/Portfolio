@@ -1,0 +1,118 @@
+.container {
+  max-width: 1200px;
+  /* margin: auto; */
+  /* padding: 0 20px; */
+  font-family: 'Poppins', 'Inter', sans-serif;
+  
+}
+
+.header {
+  display: flex;
+  justify-content: space-between; /* space between title and buttons */
+  align-items: center;
+  /* padding: 15px 30px; */
+  flex-wrap: wrap; 
+  /* allows wrapping on smaller screens */
+  gap: 18px;
+}
+
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+  color: var(--text-color);
+  padding-right: 20px;
+}
+
+.button {
+  border: none;
+  justify-content: flex-end; /* changed from center to flex-end */
+  margin: 0 auto; /* centers the button */
+  padding-right: 0%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.left .title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Make header responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .button {
+   
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.App-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 30px;
+  color: var(--text-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  gap: 15px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.right {
+  /* min-width: 100vw; */
+   /* use vw instead of vh */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end; /* this sends content to the right */
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+[data-theme="dark"] {
+  --bg-color: #1e1e1e;
+  --text-color: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: 0.3s ease-in-out;
+}
