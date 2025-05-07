@@ -1,0 +1,88 @@
+.projects {
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Poppins', 'Inter', sans-serif;
+    margin-top: 20px;
+    animation: fadeInUp 0.5s ease-in-out; /* Animation for the entire section */
+    animation-fill-mode: forwards; /* Keeps the final state of the animation */
+    animation-delay: 0.2s; /* Delay before the animation starts */
+    margin-bottom: 20px; /* Space below the section */
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.heading{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 35px;
+}
+a{
+    text-decoration: none; /* Remove underline from links */
+    font-size: small;
+}
+
+.project {
+    width: 200px; /* Fixed width for each project card */
+    /* margin: auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Slight zoom effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.span {
+    color: #000;
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .project {
+        width: 100px;
+        padding: 10px;
+    }
+
+    .project img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .span {
+        font-size: 14px;
+    }
+}
